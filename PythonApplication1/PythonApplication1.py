@@ -167,4 +167,70 @@ otvet2 = int(minuta % 60)
 print(f"{otvet1} час(ов) {otvet2} минут")
 
 #vigade otsing
+print("\n--- ulesanne 11 ---\n")
 
+# import * from math - не правильный порядок команды
+# from math import sqrt, pi
+
+# print("Ruudu karakteristikud")
+# a = float(input("Sisesta ruudu külje pikkus => "))  #исправил тут ковычки были одиночные и в число переводим
+# S=a**2
+# print("Ruudu pindala", S)
+# P=4*a
+# print("Ruudu ümbermõõt", P) #опять ковычки были одиночные
+# di=a*sqrt(2) #корень просто скрт пишется
+# print("Ruudu diagonaal", round(di,2))
+# print()
+# print("Ristküliku karakteristikud") - #была лишняя скобка
+# b=input("Sisesta ristküliku 1. külje pikkus => ")
+# c=input("Sisesta ristküliku 2. külje pikkus => ")
+# S=b*c
+# print("Ristküliku pindala", S) #не было ковычек
+# P=2(b+c)
+# print("Ristküliku ümbermõõt", P)
+# di=math.sqrt(b*2+c*2)
+# print("Ristküliku diagonaal", round(di)
+# print()
+# print("Ringi karakteristikud")
+# r=input("Sisesta ringi raadiusi pikkus =>")) #ковычки
+# d=2r
+# print("Ringi läbimõõt" d)
+# S=pi()*r*2
+# print("Ringi pindala", round(S))
+# C=2pi()*r
+# print("Ringjoone pikkus", round(C) - до меня дошло что все в перемешку нужно отсортировать что сначало ищем
+
+from math import sqrt, pi  # Импортируем только нужные функции
+
+#1 
+print("Ruudu karakteristikud")
+a = float(input("Sisesta ruudu külje pikkus => "))  #делаем в число флоат
+S = a ** 2
+print("Ruudu pindala:", S)
+P = 4 * a
+print("Ruudu ümbermõõt:", P)
+di = a * sqrt(2)  #корень из 2
+print("Ruudu diagonaal:", round(di, 2))
+
+#2
+print()
+print("Ristküliku karakteristikud")
+b = float(input("Sisesta ristküliku 1. külje pikkus => "))
+c = float(input("Sisesta ristküliku 2. külje pikkus => "))
+S = b * c
+print("Ristküliku pindala:", S)
+P = 2 * (b + c)  #правильный порядок
+print("Ristküliku ümbermõõt:", P)
+di = sqrt(b**2 + c**2)  #корень из суммы квадрата
+print("Ristküliku diagonaal:", round(di, 2))
+
+#2
+print()
+print("Ringi karakteristikud")
+r = float(input("Sisesta ringi raadiusi pikkus => "))  #переделываем в число флоат
+d = 2 * r  #диаметр 2 * радиус
+print("Ringi läbimõõt:", d)
+S = pi * r**2  #площадь круга pi * r^2 - в степени (**)
+print("Ringi pindala:", round(S, 2))
+C = 2 * pi * r  #длина круга 2 * pi * r
+print("Ringjoone pikkus:", round(C, 2))
