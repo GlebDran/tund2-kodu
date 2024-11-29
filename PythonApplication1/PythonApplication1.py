@@ -224,7 +224,7 @@ print("Ristküliku ümbermõõt:", P)
 di = sqrt(b**2 + c**2)  #корень из суммы квадрата
 print("Ristküliku diagonaal:", round(di, 2))
 
-#2
+#3
 print()
 print("Ringi karakteristikud")
 r = float(input("Sisesta ringi raadiusi pikkus => "))  #переделываем в число флоат
