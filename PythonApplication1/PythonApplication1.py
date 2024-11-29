@@ -234,3 +234,31 @@ S = pi * r**2  #площадь круга pi * r^2 - в степени (**)
 print("Ringi pindala:", round(S, 2))
 C = 2 * pi * r  #длина круга 2 * pi * r
 print("Ringjoone pikkus:", round(C, 2))
+
+#сам для себя тренируюсь
+print("\n--- Играюсь для себя ---\n")
+# import random
+# pravilnoe_chislo = random.randint (1,10)
+# while True:
+#     ugadaj = int (input ("угадай число от 1 до 10: "))
+#     if ugadaj == pravilnoe_chislo:
+#     print("ну ты экстрасенс!")
+#     break
+# elif ugadaj < pravilnoe_chislo:
+# print ("Загаданное число больше.")
+# else:
+#     print ("Загаданное число меньше.")
+
+import random
+
+pravilnoe_chislo = random.randint(1, 10)
+
+while True:
+    ugadaj = int(input("Угадай число от 1 до 10: "))
+    if ugadaj == pravilnoe_chislo:
+        print("Ну ты экстрасенс!")
+        break
+    elif ugadaj < pravilnoe_chislo:
+        print("Загаданное число больше.")
+    else:
+        print("Загаданное число меньше.")
